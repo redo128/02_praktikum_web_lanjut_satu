@@ -20,9 +20,6 @@ Route::get('/about', function () {
     echo "NIM saya : 2041720236 <br>";
     echo "Nama saya : Aditya Raihan Setyoputra";
 });
-Route::get('/articles/1', function () {
-    echo "Halaman Artikel dengan ID 1”";
-});
-Route::get('/articles/2', function () {
-    echo "Halaman Artikel dengan ID 1”";
+Route::get('/articles/{id}', function ($id) {
+    echo "Halaman Artikel dengan ID ".$id;
 });
